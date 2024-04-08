@@ -1,10 +1,10 @@
-# Basic Phaser Editor 2D script nodes
+# Basic Phaser Editor script nodes
 
-This project contains the main scripts to use with a Phaser Editor 2D project.
+This project contains the main scripts to use with a Phaser Editor project.
 
 It includes the basic script nodes and user components, especially, the `ScriptNode` and `UserComponent` classes.
 
-These script nodes are very basic and may fit on any Phaser Editor 2D project.
+These script nodes are very basic and may fit on any Phaser Editor project.
 
 The scripts are coded in TypeScript with ES modules.
 
@@ -13,21 +13,21 @@ The scripts are coded in TypeScript with ES modules.
 Install this package in your game:
 
 ```
-npm install @phaserjs/scripts-core
+npm install @phaserjs/editor-scripts-core
 ```
 
 Also, you should add this package to the `phasereditor2d.config.json` file in your project, in the `scripts` section:
 
 ```json
 {
-    "scripts": ["@phasereditor2d/scripts-code"]
+    "scripts": ["@phaserjs/editor-scripts-core"]
 }
 ```
 
 ## Installing (vanilla JS)
 
-* Get the files in the [browser](./browser/) folder and copy them into your JavaScript project. It includes Phaser Editor 2D files, JavaScript files, and TypeScript type definitions.
-* Add a `script` tag to the `index.html` file to load the `lib/phasereditor2d_scripts_core.js` file.
+* Get the files in the [browser](./browser/) folder and copy them into your JavaScript project. It includes Phaser Editor files, JavaScript files, and TypeScript type definitions.
+* Add a `script` tag to the `index.html` file to load the `lib/phaserjs_editor_scripts_core.js` file.
 
 ## Summary
 
@@ -105,7 +105,7 @@ With the **Assignment Operator**, you can specify the operator to use in the ass
 
 ## ScriptNode
 
-The base of all the scripts. Probably it is already available in your project (if you generated it with Phaser Editor 2D).
+The base of all the scripts. Probably it is already available in your project (if you generated it with Phaser Editor).
 
 This class provides methods for managing the node's children, and implementing the scene events: `awake`, `start`, and `update`.
 

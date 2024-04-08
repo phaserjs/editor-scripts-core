@@ -1,5 +1,5 @@
 {
-	"name": "@phaserjs/scripts-core",
+	"name": "@phaserjs/editor-scripts-core",
 	"version": "1.1.2",
 	"description": "The main scripts for Phaser Editor 2D.",
 	"main": "out/index.js",
