@@ -1,3 +1,7 @@
+## v2.0.0 - Apr 8, 2024
+
+* Migrates to Phaser Editor 4.
+
 ## v1.1.2 - Jan 11, 2024
 
 * Fixes build-browser script. Include .components files.
