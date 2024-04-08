@@ -13,7 +13,7 @@ The scripts are coded in TypeScript with ES modules.
 Install this package in your game:
 
 ```
-npm install @phasereditor2d/scripts-core
+npm install @phaserjs/scripts-core
 ```
 
 Also, you should add this package to the `phasereditor2d.config.json` file in your project, in the `scripts` section:
