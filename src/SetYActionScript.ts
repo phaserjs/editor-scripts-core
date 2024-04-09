@@ -25,8 +25,6 @@ export default class SetYActionScript extends ScriptNode {
 
 	execute(...args: any[]): void {
 
-		console.log("here");
-
 		const obj = this.getActionTargetObject(args) as Phaser.GameObjects.Sprite;
 
 		obj.y = AssignOpComp.computeValue(this, obj.y, this.y);
