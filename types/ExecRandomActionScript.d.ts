@@ -1,6 +1,6 @@
 import ScriptNode from "./ScriptNode";
 import Phaser from "phaser";
 export default class ExecRandomActionScript extends ScriptNode {
-    constructor(parent: ScriptNode | Phaser.GameObjects.GameObject | Phaser.GameObjects.Layer | Phaser.Scene);
+    constructor(parent: ScriptNode | Phaser.GameObjects.GameObject | Phaser.Scene);
     execute(...args: any[]): void;
 }

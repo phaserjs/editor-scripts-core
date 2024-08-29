@@ -10,7 +10,7 @@ class ScriptNode {
             this._gameObject = parent.gameObject;
             parent.add(this);
         }
-        else if (parent instanceof Phaser.GameObjects.GameObject || parent instanceof Phaser.GameObjects.Layer) {
+        else if (parent instanceof Phaser.GameObjects.GameObject) {
             this._scene = parent.scene;
             this._gameObject = parent;
         }
