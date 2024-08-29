@@ -1,6 +1,6 @@
 {
 	"name": "@phaserjs/editor-scripts-core",
-	"version": "2.0.2",
+	"version": "2.0.4",
 	"description": "The main scripts for Phaser Editor 2D.",
 	"main": "out/index.js",
 	"types": "types/index.d.ts",
