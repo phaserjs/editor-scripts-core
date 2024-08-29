@@ -11,7 +11,7 @@ import AssignOpComp from "./AssignOpComp";
 
 export default class SetYActionScript extends ScriptNode {
 
-	constructor(parent: ScriptNode | Phaser.GameObjects.GameObject | Phaser.GameObjects.Layer | Phaser.Scene) {
+	constructor(parent: ScriptNode | Phaser.GameObjects.GameObject | Phaser.Scene) {
 		super(parent);
 
 		/* START-USER-CTR-CODE */

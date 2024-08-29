@@ -4,11 +4,11 @@ import ActionTargetComp from "./ActionTargetComp";
 export default class ScriptNode {
 
     private _scene: Phaser.Scene;
-    private _gameObject?: Phaser.GameObjects.GameObject | Phaser.GameObjects.Layer;
-    private _parent: ScriptNode | Phaser.GameObjects.GameObject | Phaser.GameObjects.Layer | Phaser.Scene;
+    private _gameObject?: Phaser.GameObjects.GameObject;
+    private _parent: ScriptNode | Phaser.GameObjects.GameObject | Phaser.Scene;
     private _children?: ScriptNode[];
 
-    constructor(parent: ScriptNode | Phaser.GameObjects.GameObject | Phaser.GameObjects.Layer | Phaser.Scene) {
+    constructor(parent: ScriptNode | Phaser.GameObjects.GameObject | Phaser.Scene) {
 
         this._parent = parent;
 
@@ -19,7 +19,7 @@ export default class ScriptNode {
 
             parent.add(this);
 
-        } else if (parent instanceof Phaser.GameObjects.GameObject || parent instanceof Phaser.GameObjects.Layer) {
+        } else if (parent instanceof Phaser.GameObjects.GameObject) {
 
             this._scene = parent.scene;
             this._gameObject = parent;
