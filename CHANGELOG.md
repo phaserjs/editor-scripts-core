@@ -1,3 +1,7 @@
+## v2.0.1 - Aug 29, 2024
+
+* Allows Layer as parent for the ScriptNode.
+
 ## v2.0.0 - Apr 8, 2024
 
 * Migrates to Phaser Editor 4.
