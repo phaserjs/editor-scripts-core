@@ -4,11 +4,11 @@ import ActionTargetComp from "./ActionTargetComp";
 export default class ScriptNode {
 
     private _scene: Phaser.Scene;
-    private _gameObject?: Phaser.GameObjects.GameObject | Phaser.GameObjects.Layer;
-    private _parent: ScriptNode | Phaser.GameObjects.GameObject | Phaser.GameObjects.Layer | Phaser.Scene;
+    private _gameObject?: Phaser.GameObjects.GameObject | Phaser.GameObjects.Layer & Phaser.Events.EventEmitter;
+    private _parent: ScriptNode | Phaser.GameObjects.GameObject | Phaser.GameObjects.Layer & Phaser.Events.EventEmitter | Phaser.Scene;
     private _children?: ScriptNode[];
 
-    constructor(parent: ScriptNode | Phaser.GameObjects.GameObject | Phaser.GameObjects.Layer | Phaser.Scene) {
+    constructor(parent: ScriptNode | Phaser.GameObjects.GameObject | Phaser.GameObjects.Layer & Phaser.Events.EventEmitter | Phaser.Scene) {
 
         this._parent = parent;
 
@@ -65,8 +65,7 @@ export default class ScriptNode {
 
             if (this.gameObject) {
 
-                // the Layer type defs in v3.80.1 don't include the `on` method, but it is available
-                (this.gameObject as any).on(Phaser.GameObjects.Events.DESTROY, destroyCallback);
+                this.gameObject.on(Phaser.GameObjects.Events.DESTROY, destroyCallback);
 
             } else {
 

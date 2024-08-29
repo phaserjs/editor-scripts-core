@@ -10,7 +10,7 @@ class ScriptNode {
             this._gameObject = parent.gameObject;
             parent.add(this);
         }
-        else if (parent instanceof Phaser.GameObjects.GameObject) {
+        else if (parent instanceof Phaser.GameObjects.GameObject || parent instanceof Phaser.GameObjects.Layer) {
             this._scene = parent.scene;
             this._gameObject = parent;
         }
@@ -707,7 +707,6 @@ class SetYActionScript extends ScriptNode {
     y = 0;
     /* START-USER-CODE */
     execute(...args) {
-        console.log("here");
         const obj = this.getActionTargetObject(args);
         obj.y = AssignOpComp.computeValue(this, obj.y, this.y);
     }
