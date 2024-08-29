@@ -1,3 +1,7 @@
+## v2.0.3 - Aug 29, 2024
+
+* Rollbacks the Layer changes.
+
 ## v2.0.2 - Aug 29, 2024
 
 * Re-compile all script nodes to get the latest fixes.
