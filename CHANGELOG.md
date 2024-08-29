@@ -1,3 +1,7 @@
+## v2.0.2 - Aug 29, 2024
+
+* Re-compile all script nodes to get the latest fixes.
+
 ## v2.0.1 - Aug 29, 2024
 
 * Allows Layer as parent for the ScriptNode.
