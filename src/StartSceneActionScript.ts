@@ -10,7 +10,7 @@ import Phaser from "phaser";
 
 export default class StartSceneActionScript extends ScriptNode {
 
-	constructor(parent: ScriptNode | Phaser.GameObjects.GameObject | Phaser.Scene) {
+	constructor(parent: ScriptNode | Phaser.GameObjects.GameObject | Phaser.GameObjects.Layer | Phaser.Scene) {
 		super(parent);
 
 		/* START-USER-CTR-CODE */
