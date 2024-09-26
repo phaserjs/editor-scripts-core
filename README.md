@@ -1,5 +1,7 @@
 # Basic Phaser Editor script nodes
 
+**Warning: This project is deprecated. It is now part of the [@phaserjs/editor-scripts-quick](https://www.npmjs.com/package/@phaserjs/editor-scripts-quick) library.**
+
 This project contains the main scripts to use with a Phaser Editor project.
 
 It includes the basic script nodes and user components, especially, the `ScriptNode` and `UserComponent` classes.
